@@ -8,7 +8,6 @@ The front-end of the Employee Task Management application, built with React.
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
 - [Environment Variables](#environment-variables)
-- [Screenshots](#screenshots)
 
 ## Project Structure
 
@@ -69,8 +68,3 @@ const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 ```
 
 Ensure the `.env` file is listed in `.gitignore` to prevent it from being pushed to the repository.
-
-## Screenshots
-
-A screenshot of the front-end interface:
-
