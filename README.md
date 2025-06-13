@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Employee Task Management Front-end
 
-## Getting Started
+The front-end of the Employee Task Management application, built with React.
 
-First, run the development server:
+## Table of Contents
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Environment Variables](#environment-variables)
+- [Screenshots](#screenshots)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+The project is organized as follows:
+
+```
+employee-task-management-fe/
+├── public/                # Public assets
+├── src/                   # Source code (components, pages, etc.)
+├── screenshots/           # Screenshots of the application
+│   └── app-screenshot.png
+├── package.json           # Project dependencies
+├── .gitignore             # Git ignore file
+└── README.md              # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Front-end**: Next, TypeScript, Antd, Tailwind, HTML, CSS
+- **Others**: npm, Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/gachip90/employee-task-management-fe.git
+   cd employee-task-management-fe
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up environment variables** (if needed):
+   - Create a `.env` file in the root directory with variables such as:
+     ```env
+     NEXT_PUBLIC_API_BASE_URL=[Your_API_URL]
+     ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Running the Application
 
-## Deploy on Vercel
+1. **Start the front-end**:
+   ```bash
+   npm start
+   ```
+   - The application will run on `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Access the application**:
+   - Open your browser and navigate to `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables
+
+To manage API endpoints or other sensitive information, use environment variables in a `.env` file. Example usage in code:
+
+```javascript
+const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+```
+
+Ensure the `.env` file is listed in `.gitignore` to prevent it from being pushed to the repository.
+
+## Screenshots
+
+A screenshot of the front-end interface:
+
+![Application Screenshot](./screenshots/app-screenshot.png)
