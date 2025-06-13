@@ -74,4 +74,3 @@ Ensure the `.env` file is listed in `.gitignore` to prevent it from being pushed
 
 A screenshot of the front-end interface:
 
-![Application Screenshot](./screenshots/app-screenshot.png)
